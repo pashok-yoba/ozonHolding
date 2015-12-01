@@ -1,0 +1,971 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Ozon holding</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Stylesheet" type="text/css" href="css/oz_hol.css" />
+<link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
+<script language="JavaScript" type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/jquery-ui.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/hoverIntent.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/slider.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/bjqs-1.3.js"></script>
+<script src="http://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+
+    <!--[if IE 9]>
+    <script language="JavaScript" type="text/javascript" src="js/ozon-holding-last-IE.js"></script>
+    <![endif]-->
+    <script language="JavaScript" type="text/javascript" src="js/ozon-holding-last.js"></script>
+
+    <style type="text/css">
+        .bLeftMenu .bLeftMenuItem {
+            position:relative;
+            z-index: 1;
+            font-weight:bold;
+            background-color: #facd02;
+            cursor:pointer;
+        }
+
+        .bLeftMenu .bLeftMenuItem .bLeftMenuName {
+            position: absolute;
+            display: block;
+            top: 6px;
+            height: 26px;
+            color:#fff;
+            font-size: 13px;
+            line-height: 26px;
+            white-space: nowrap;
+            font-weight: normal;
+            padding: 0 2px 0 46px;
+            background-color: #00bcff;
+        }
+        .bLeftMenuHome { left: -100px; }
+        .bLeftMenuNumber { left: -158px; }
+        .bLeftMenuHi { left: -145px; }
+        .bLeftMenuNews { left: -95px; }
+        .bLeftMenuInv { left: -132px; }
+        .bLeftMenuContact { left: -120px; }
+
+        .bLeftMenu .bLeftMenuItem .bLeftMenuName span {
+            position: absolute;
+            right: -15px;
+            width: 16px;
+            height: 26px;
+            background: url(img/sprite-map.png) -11px -32px no-repeat;
+        }
+
+        .bLeftMenu .bLeftMenuItem a {
+            position: relative;
+            z-index: 1;
+            color:#fff;
+            line-height: 36px;
+            display: block;
+            width: 31px;
+            height: 36px;
+            text-align: center;
+            font-size:18px;
+        }
+        /*.bLeftMenu .bLeftMenuItem a:hover,*/
+        .bLeftMenu .bLeftMenuItem.bLeftMenuItemActive a{
+            background: url(img/sprite-map.png) 0 -67px no-repeat;
+            z-index: 10;
+        }
+
+        .bLeftMenu .bLeftMenuItem:first-child {
+        }
+
+        .bLeftMenu .bLeftMenuItem:first-child a span {
+            display: block;
+            width: 31px;
+            height: 36px;
+            background: url(img/sprite-map.png) 7px 10px no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="Home"></div>
+	<ul class="bLeftMenu" id="bLeftMenu">
+        <li class="bLeftMenuItem bLeftMenuItemActive"><a href="#Home"><span>&nbsp;</span></a><!--<div class="bLeftMenuName bLeftMenuHome">Вверх<span>&nbsp;</span></div></li>-->
+		<li class="bLeftMenuItem"><a href="#Number">1</a><div class="bLeftMenuName bLeftMenuNumber">Цифры и факты<span>&nbsp;</span></div></li>
+		<li class="bLeftMenuItem"><a href="#Hi">2</a><div class="bLeftMenuName bLeftMenuHi">Приветствие<span>&nbsp;</span></div></li>
+		<li class="bLeftMenuItem"><a href="#News">3</a><div class="bLeftMenuName bLeftMenuNews">СМИ<span>&nbsp;</span></div></li>
+		<li class="bLeftMenuItem"><a href="#Inv">4</a><div class="bLeftMenuName bLeftMenuInv">Инвесторы<span>&nbsp;</span></div></li>
+		<li class="bLeftMenuItem"><a href="#Contact">5</a><div class="bLeftMenuName bLeftMenuContact">Контакты<span>&nbsp;</span></div></li>
+	</ul>
+	<div class="bPage">
+		<div class="eFonHeader">
+			<div class="bHeader">
+				<div class="eLanguage">
+					<a href="/">RU</a>
+					<a href="/">ENG</a>
+				</div>
+				<div class="eSmallLogo">
+                    <a href="index.html"><img class="eSmallLogo_img" src="img/small_logo.png" alt="logo_top"></a>
+				</div>
+				<ul class="bTopMenu" id="bTopMenu">
+					<li><a href="./oz_contacts.html">КОНТАКТЫ</a></li>
+					<!--<li><a href="javascript:void(0);">ИНВЕСТОРАМ</a></li> -->
+					<li><a href="./oz_hol_press.html">ПРЕСС-РЕЛИЗЫ</a>
+					</li>
+					<li><a href="./oz_hol_team.html">КОМАНДА</a></li>
+					<li><a href="./oz_hol_company.html">КОМПАНИЯ</a>
+						<ul class="bSubTopMenu">
+							<li><a href="./oz_hol_company.html?x1">OZON.ru</a></li>
+							<li><a href="./oz_hol_company.html?x2">OZON.Travel</a></li>
+							<li><a href="./oz_hol_company.html?x3">Sapato</a></li>
+							<li><a href="./oz_hol_company.html?x4">О-курьер</a></li>
+							<li><a href="./oz_hol_company.html?x5">eSolutions</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="eFonPoligonTopMenu"></div>
+		</div>
+        <div class="bAboutOf" id="about">
+            <ul class="homeTopSlider">
+                <li>
+                    <div class="imagesBox eBannerHolding">
+                        <span class="caption">
+                            <span>OZON Holdings</span>
+                            <div>
+                                <span class="Ozon-text-header">самая крупная e-commerce группа в России</span>
+                            </div>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <a href="oz_hol_company.html" class="imagesBox eBannerOzon">
+                       <span class="caption">
+                           <span>Ozon.ru</span>
+                           <div>
+                               <span class="Ozon-text-header">самый популярный <br />интернет-магазин в России</span>
+                           </div>
+                       </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="oz_hol_company.html" class="imagesBox eBannerTravel"></a>
+
+                    <div class="caption">
+                        <span>Ozon.travel</span>
+                        <div>
+                            <span class="Ozon-text-header">онлайн-трэвел агентство №1 в России</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="oz_hol_company.html" class="imagesBox eBannerSapato"></a>
+
+                    <div class="caption">
+                        <span>Sapato.ru</span>
+                        <div>
+                            <span class="Ozon-text-header">популярнейший магазин модной обуви и аксессуаров</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="oz_hol_company.html" class="imagesBox eBannerCourier"></a>
+
+                    <div class="caption">
+                        <span>О-Курьер</span>
+                        <div>
+                            <span class="Ozon-text-header">самая широкая сеть доставки товаров в России</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="oz_hol_company.html" class="imagesBox eBannerEs"></a>
+
+                    <div class="caption">
+                        <span>Ozon Solutions</span>
+                        <div>
+                            <span class="Ozon-text-header">самый удобный способ начать онлайн-бизнес в России</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+			<div id="mAbout" class="">
+
+                <div class="eFonPoligonAboutOfBottom"></div>
+            </div>
+			<div class="mAboutOf">
+				<div class="bBigLogo eHolding"></div>
+				<div id="slogan">
+					<div class="eSloganHolding" style="">самая крупная e-commerse группа в России</div>
+					<div class="eSloganOzon" style="">самый популярный интернет-магазин в России</div>
+					<div class="eSloganTravel" style="">онлайн-трэвел агентство №1 в России</div>
+					<div class="eSloganCourier" style="">самая широкая сеть доставки товаров в России</div>
+					<div class="eSloganSapato" style="">популярнейший магазин модной обуви и аксессуаров</div>
+					<div class="eSloganEs" style="">самый удобный способ начать онлайн-бизнес в России</div>
+				</div>
+				<div class="bMainMenu" id="Number">
+					<ul class="mMainMenu" id="m_menu">
+                        <li><a href="/" class="eOzonHolding"></a></li>
+						<li><a href="/" class="eOzon"></a></li>
+						<li><a href="/" class="eTravel"></a></li>
+						<li><a href="/" class="eSapato"></a></li>
+						<li><a href="/" class="eCourier"></a></li>
+						<li><a href="/" class="eEs"></a></li>
+                        <li class="helper_justify"></li>
+					</ul>
+					<div class="eTtriangle" id="tria"></div>
+				</div>
+			</div>
+		</div>
+		<div id="Numbe" class="bInfoGraf mInfoGraf">
+            <div class="bInfoGrafPic">
+                <div class="bRight">
+                    <div class="bMap">
+                        <div class="bMapCartActiveView">
+                            <img class="bMapCartBlank" src="img/images_map_cart_blank.gif" border="0" alt="" usemap="#map_cart_blank" />
+                            <div class="bMapCityItems bCityKhabarovsk"></div>
+                            <div class="bMapCityItems bCityNovosibirsk"></div>
+                            <div class="bMapCityItems bCityYekaterinburg"></div>
+                            <div class="bMapCityItems bCityAstana"></div>
+                            <div class="bMapCityItems bCityMoscow"></div>
+                            <div class="bMapCityItems bCityTver"></div>
+                            <div class="bMapCityItems bCityTitle_13"></div>
+                            <div class="bMapCityItems bCityTitle_8"></div>
+                            <div class="bMapCityItems bCityTitle_9"></div>
+                            <div class="bMapCityItems bCityTitle_10"></div>
+                            <div class="bMapCityItems bCityTitle_11"></div>
+                            <div class="bMapCityItems bCityTitle_12"></div>
+                            <div class="bMapCityItems bCityTitle_15"></div>
+                            <div class="bMapCityItems bCityTitle_16"></div>
+                            <!-- ..... -->
+                            <div class="mapItemsText foVostok bCityKhabarovskFo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Дальневосточный ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">35</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        1,01 чел/км2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mapItemsText foSibirsk bCityNovosibirskFo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Сибирский ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">137</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        3,75 чел/км2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mapItemsText foUral bCityYekaterinburgFo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Уральский ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">176</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        6,71 чел/км2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mapItemsText foPrivolz bCityMoscowFo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Приволжский ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">246</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        28,71 чел/км2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mapItemsText foSever bCityTitle_10Fo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Северо-Кавказский ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">44</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        55,98 чел/км2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mapItemsText foKrim bCityTitle_11Fo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Крымский ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">8</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        78 чел./км²
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mapItemsText foSeverZ bCityTverFo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Северо-Западный ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">258</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        8,13 чел/км2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mapItemsText foCenter bCityTitle_8Fo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Центральный ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">627</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        59,49 чел/км2
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mapItemsText foCenter foUz bCityTitle_9Fo">
+                                <div class="MapItemsText-end" >
+                                    <p class="mapItemsText-Name">Южный ФО</p>
+                                    <p class="MapItemsText-Amount">
+                                        <span class="mapItemsText-Number">92</span>
+                                        <span class="mapItemsText-description">пунктов<br /> выдачи заказов</span>
+                                    </p>
+                                    <p class="MapItemsText-square">
+                                        33,04 чел/км2
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bMapCityViewInfo CityAlmati bCityAstanaFo ">
+                                <h2>Казахстан</h2>
+                                <p>Алматы – Жители Казахстана могут получить заказы курьерской доставкой, через пункты выдачи заказов или при помощи Казпочты.</p>
+                            </div>
+                            <div class="bMapCityViewInfo CityFinland bCityTitle_12Fo ">
+                                <h2>Финляндия</h2>
+                                <p>Хельсинки – Клиенты получают заказы в терминалах InPost.</p>
+                            </div>
+                            <div class="bMapCityViewInfo CityFinland bCityTitle_13Fo ">
+                                <h2>Прибалтика</h2>
+                                <p>Прибалтика. . ..</p>
+                            </div>
+                            <div class="bMapCityViewInfo CityRiga bCityTitle_14Fo ">
+                                <h2>Латвия</h2>
+                                <p>Рига – получить заказы можно в пунктах выдачи, заказать доставку курьером или воспользоваться услугами почты.</p>
+                            </div>
+                            <div class="bMapCityViewInfo CityLitva bCityRigaFo ">
+                                <h2>Литва</h2>
+                                <p>бла бла бла бла.</p>
+                            </div>
+                            <div class="bMapCityViewInfo CityPolsh bCityTitle_16Fo ">
+                                <h2>Польша</h2>
+                                <p>Варшава - Клиенты получают заказы в терминалах InPost.</p>
+                            </div>
+
+
+                            <div class="bMapBull bCityKhabarovsk bMapBullKhabarovsk bMapBullHover">
+                                <span class="bCityName bCityKhabarovsk">Хабаровск</span>
+                            </div>
+                            <div class="bMapBull bCityNovosibirsk bMapBullHover">
+                                <span class="bCityName bCityNovosibirsk">Новосибирск</span>
+                            </div>
+                            <div class="bMapBull bCityYekaterinburg bMapBullHover">
+                                <span class="bCityName bCityYekaterinburg">Екатеринбург</span>
+                            </div>
+                            <div class="bMapBull bCityAstana bMapBullHover">
+                                <span class="bCityName bCityAstana">Астана</span>
+                            </div>
+                            <div class="bMapBull bCityMoscow bMapBullHover">
+                                <span class="bCityName bCityMoscow">Москва</span>
+                            </div>
+                            <div class="bMapBull bCityTver bMapBullHover">
+                                <span class="bCityName bCityTver">Тверь</span>
+                            </div>
+                            <div class="bMapBull bCitySP bMapBullHover">
+                                <span class="bCityName bCitySP">С-Петербург</span>
+                            </div>
+
+                            <div class="bMapCityViewInfo bCityKhabarovsk bCityKhabarovskActive">
+                                <h2>Хабаровск</h2>
+                                <p>В столице располагается штаб-квартира компании. Распределительный центр,
+                                    а также 235 пунктов выдачи</p>
+                            </div>
+                            <div class="bMapCityViewInfo bCityNovosibirsk bCityNovosibirskActive">
+                                <h2>Новосибирск</h2>
+                                <p>В столице располагается штаб-квартира компании. Распределительный центр,
+                                    а также 235 пунктов выдачи</p>
+                            </div>
+                            <div class="bMapCityViewInfo bCityYekaterinburg bCityYekaterinburgActive">
+                                <h2>Екатеринбург</h2>
+                                <p>В столице располагается штаб-квартира компании. Распределительный центр,
+                                    а также 235 пунктов выдачи</p>
+                            </div>
+                            <div class="bMapCityViewInfo bCityAstana bCityAstanaActive">
+                                <h2>Астана</h2>
+                                <p>В столице располагается штаб-квартира компании. Распределительный центр,
+                                    а также 235 пунктов выдачи</p>
+                            </div>
+                            <div class="bMapCityViewInfo bCityMoscow bCityMoscowActive">
+                                <h2>Москва</h2>
+                                <p>В столице располагается штаб-квартира компании. Распределительный центр,
+                                    а также 235 пунктов выдачи</p>
+                            </div>
+                            <div class="bMapCityViewInfo bCityTver bCityTverActive">
+                                <h2>Тверь</h2>
+                                <p>В столице располагается штаб-квартира компании. Распределительный центр,
+                                    а также 235 пунктов выдачи</p>
+                            </div>
+                            <div class="bMapCityViewInfo bCitySP bCitySPActive">
+                                <h2>С-Петербург</h2>
+                                <p>В столице располагается штаб-квартира компании. Распределительный центр,
+                                    а также 235 пунктов выдачи</p>
+                            </div>
+                            <div class="bMapCityViewInfo bCityRiga bCityRigaActive">
+                                <h2>Рига</h2>
+                                <p>В столице располагается штаб-квартира компании. Распределительный центр,
+                                    а также 235 пунктов выдачи</p>
+                            </div>
+                        </div>
+                        <map name="map_cart_blank" id="map_cart_blank">
+                            <area class="bCityTitle_11" shape="poly" href="javascript:void(0)" coords="1, 166, 14, 157, 29, 168, 32, 172, 48, 172, 39, 176, 31, 175, 27, 179, 20, 179, 13, 184, 10, 171" title='11' target='_blank' />
+                            <area class="bCityAstana" shape="poly" href="javascript:void(0)" coords="88, 231, 99, 231, 103, 236, 110, 223, 93, 213, 100, 203, 101, 190, 107, 187, 110, 191, 120, 189, 131, 196, 129, 203, 163, 221, 173, 204, 180, 204, 205, 209, 216, 226, 231, 225, 237, 252, 267, 272, 257, 288, 248, 284, 238, 299, 228, 297, 228, 308, 223, 316, 192, 299, 178, 297, 158, 304, 150, 297, 150, 277, 134, 268, 128, 248, 113, 245, 98, 265, 94, 254, 85, 251, 89, 245" title='4' target='_blank' />
+                            <area class="bCityTitle_10" shape="poly" href="javascript:void(0)" coords="71, 231, 62, 231, 63, 213, 53, 198, 62, 188, 68, 189, 74, 209, 78, 210" title='10' target='_blank' />
+                            <area class="bCityTitle_9" shape="poly" href="javascript:void(0)" coords="50, 171, 94, 167, 102, 182, 95, 189, 96, 201, 89, 210, 77, 210, 68, 187, 59, 186, 54, 196, 51, 195, 46, 190" title='9' target='_blank' />
+                            <area class="bCityTitle_8" shape="poly" href="javascript:void(0)" coords="78, 116, 84, 122, 85, 108, 97, 102, 115, 109, 127, 123, 149, 139, 124, 139, 95, 164, 81, 164, 73, 144, 79, 129, 70, 120" title='8' target='_blank' />
+                            <area class="bCityTitle_13" shape="poly" href="javascript:void(0)" coords="81, 73, 86, 78, 89, 81, 89, 88, 79, 89, 78, 83, 79, 75" title='7' target='_blank' />
+                            <area class="bCityTver" shape="poly" href="javascript:void(0)" coords="181, 45, 176, 53, 180, 71, 173, 80, 164, 73, 163, 64, 151, 76, 151, 86, 159, 81, 161, 87, 171, 86, 191, 75, 190, 91, 207, 91, 207, 97, 226, 97, 236, 105, 227, 124, 206, 132, 194, 148, 158, 140, 149, 139, 126, 122, 115, 109, 97, 102, 85, 109, 85, 94, 110, 77, 133, 75, 146, 58, 160, 50, 160, 45" title='6' target='_blank' />
+                            <area class="bCityMoscow" shape="poly" href="javascript:void(0)" coords="123, 139, 157, 140, 194, 149, 181, 165, 164, 177, 171, 181, 159, 201, 157, 204, 164, 209, 161, 215, 134, 199, 127, 188, 116, 185, 108, 186, 95, 164" title='5' target='_blank' />
+                            <area class="bCityYekaterinburg" shape="poly" href="javascript:void(0)" coords="248, 96, 263, 81, 257, 115, 273, 92, 271, 135, 279, 162, 273, 185, 244, 180, 229, 194, 220, 189, 207, 206, 177, 198, 168, 200, 163, 209, 159, 201, 172, 181, 164, 177, 181, 165, 207, 132, 227, 124, 236, 105, 248, 114" title='3' target='_blank' />
+                            <area class="bCityNovosibirsk" shape="poly" href="javascript:void(0)" coords="333, 62, 352, 76, 345, 92, 352, 110, 340, 126, 340, 162, 360, 185, 354, 197, 368, 196, 377, 185, 390, 190, 400, 210, 411, 214, 418, 229, 415, 233, 419, 237, 410, 258, 390, 257, 384, 265, 376, 269, 348, 260, 344, 263, 327, 253, 316, 259, 320, 264, 311, 268, 294, 261, 267, 267, 237, 249, 232, 221, 217, 221, 208, 206, 220, 190, 229, 193, 244, 181, 273, 184, 278, 162, 271, 134, 272, 92, 322, 73" title='2' target='_blank' />
+                            <area class="bCityKhabarovsk" shape="poly" href="javascript:void(0)" coords="521, 1, 531, 1, 538, 9, 519, 22, 515, 24, 521, 37, 538, 43, 538, 73, 528, 93, 533, 110, 539, 110, 557, 155, 529, 137, 519, 122, 520, 113, 515, 84, 504, 102, 504, 124, 476, 157, 464, 193, 481, 193, 486, 187, 500, 195, 511, 221, 511, 244, 508, 260, 502, 272, 491, 274, 486, 263, 494, 260, 488, 237, 480, 247, 454, 240, 437, 225, 425, 224, 419, 229, 412, 214, 401, 211, 391, 190, 377, 186, 369, 197, 355, 197, 360, 186, 341, 162, 341, 126, 352, 111, 346, 93, 367, 87, 371, 93, 378, 89, 380, 80, 387, 80, 392, 91, 401, 98, 401, 92, 418, 83, 419, 72, 442, 65, 454, 52, 464, 55, 485, 38, 476, 38, 511, 9, 521, 9" title='1' target='_blank' />
+                            <area class="bCityTitle_12" shape="poly" href="javascript:void(0)" coords="100, 59, 110, 46, 132, 44, 150, 19, 155, 29, 166, 26, 169, 33, 127, 70, 107, 68 " title='8' target='_blank' />
+                            <area class="bCityTitle_13" shape="poly" href="javascript:void(0)" coords="100, 68, 104, 68, 107, 73, 108, 77, 104, 78, 102, 82, 98, 76, 97, 69" title='8' target='_blank' />
+                            <area class="bCityTitle_13" shape="poly" href="javascript:void(0)" coords="71, 82, 86, 69, 91, 70, 92, 76, 95, 76, 101, 84, 95, 91, 91, 87, 91, 81, 75, 73, 86, 69" title='8' target='_blank' />
+                            <area class="bCityTitle_15" shape="poly" href="javascript:void(0)" coords="72, 75, 77, 75, 77, 81, 73, 75" title='8' target='_blank' />
+                            <area class="bCityTitle_16" shape="poly" href="javascript:void(0)" coords="59, 64, 69, 69, 71, 70, 70, 76, 74, 81, 76, 87, 64, 99, 57, 97, 51, 89, 52, 83, 48, 80, 48, 73, 56, 65" title='8' target='_blank' />
+                        </map>
+                    </div>
+                </div>
+                <div class="bLeft">
+                    <div class="bBaseInfo bBaseInfoVr">
+                        <div class="mTerm">
+                            <span>17 <div>лет</div></span>
+                            <span class="success">успешной работы<br />на рынке</span>
+                        </div>
+                        <div class="mBaseInfo">
+                            <div class="mBaseInfoItems eSquare"><div>28 000 м<sup>2</sup></div> <span>ПЛОЩАДЬ ЦЕНТРАЛЬНОГО СКЛАДСКОГО КОМПЛЕКСА</span></div>
+                            <div class="mBaseInfoItems eHub"><div>10 000 м<sup>2</sup></div> <span>ПЛОЩАДИ 5 РЕГИОНАЛЬНЫХ ХАБОВ</span></div>
+                            <div class="mBaseInfoItems ePeople"><div>17 млн.</div><span>ЧЕЛОВЕК НАСЧИТЫВАЕТ КЛИЕНТСКАЯ БАЗА</span></div>
+                            <div class="mBaseInfoItems ePvz"><div>1 600</div><span>ПУНКТОВ ВЫДАЧИ В РОССИИ, КАЗАХСТАНЕ И ЛАТВИИ</span></div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+			<div class="mInfoGraf bInfo">
+				<div class="bLeft2">
+					<div class="bTurnover">
+						<div class="eName">ОБОРОТ КОМПАНИИ</div>
+						<ul class="mVertDiagram">
+							<li class="mVertDiagramItems eVertDiagram1">
+								<div>
+									<div class="DiagramText1">5.5</div>
+									<span>2010</span>
+								</div>
+							</li>
+							<li class="eText"><div>78%</div></li>
+							<li class="mVertDiagramItems eVertDiagram2">
+								<div>
+									<div class="DiagramText2">8.8</div>
+									<span>2011</span>
+								</div>
+							</li>
+							<li class="eText"><div>73%</div></li>
+							<li class="mVertDiagramItems eVertDiagram3">
+								<div>
+									<div class="DiagramText3">15.2</div>
+									<span>2012</span>
+								</div>
+							</li>
+                            <li class="eText" id="eText1"><div>50%</div></li>
+                            <li class="mVertDiagramItems eVertDiagram4">
+                                <div>
+                                    <div class="DiagramText4">23.8</div>
+                                    <span>2013</span>
+                                </div>
+                            </li>
+						</ul>
+						<div class="eQuantity">ОБОРОТ КОМПАНИИ, МЛРД. РУБ.</div>
+					</div>
+				</div>
+                <div class="bCircleDiagram mInfoGraf">
+                    <div class="eName1">ИССЛЕДОВАНИЕ АУДИТОРИИ ОНЛАЙН ПОКУПАТЕЛЕЙ В РОССИИ</div>
+                    <div class="info-circle">
+                        <div class="diagram">
+                            <script src="http://d3js.org/d3.v3.min.js"></script>
+                            <script src="js/donut.js"></script>
+                            <script>
+                                var $windowHeight;
+                                var ElementTop;
+                                var $heightDiagramm;
+                                var $heightAbout;
+                                $(function(){
+                                    $windowHeight = $(window).height();
+                                    $heightDiagramm = $('.diagram-text').offset().top;
+                                    $heightAbout = $('.eName1').offset().top -40;
+                                    ElementTop =$('.eName1').offset().top+200;
+                                    if ( $windowHeight > 900) {
+                                        var $conteinerBaseInfo = $('.bBaseInfo');
+                                        animationBaseInfo($conteinerBaseInfo);
+                                        $conteinerBaseInfo.removeClass('bBaseInfoVr');
+                                    }
+                                 });
+                                var data = [
+                                    { name: "Ozon", value: 19 },
+                                    { name: "Avito.ru", value: 18 },
+                                    { name: "ebay", value: 16 },
+                                    { name: "E5.ru", value: 13 },
+                                    { name: "AliExpress", value: 11 },
+                                    { name: "Other", value: 23 }
+                                ];
+                                var data1 = [
+                                    { name: "Ozon", value: 28 },
+                                    { name: "Avito.ru", value: 19 },
+                                    { name: "ebay", value: 17 },
+                                    { name: "E5.ru", value: 13 },
+                                    { name: "AliExpress", value: 13 },
+                                    { name: "Other", value: 13 },
+                                    { name: "Doch", value: 11 }
+                                ];
+                                var opts = {
+                                    width: 220,
+                                    height: 220,
+                                    margin: { top: 20, right: 20, bottom: 20, left: 20 },
+                                    pieWidth: 55,
+                                    start: 0,
+                                    end: 2
+                                };
+                                $(window).scroll(function animateInf(){
+                                    var $windowScroll = $(window).scrollTop();
+                                    if (($heightAbout - $windowScroll - $windowHeight) < 0) {
+                                        animationBaseInfo($('.bBaseInfoVr'));
+                                    }
+                                    if (($heightDiagramm - $windowScroll - $windowHeight) < 0) {
+                                        donut(".diagram", data1, "d1", opts);
+                                        donut(".diagram1", data, "d2", opts);
+                                        animateDiagramm1($('.diagram'));
+                                        animateDiagramm2($('.diagram1'));
+                                        animtionRiseCompany($('.bTurnover'));
+                                        $(window).unbind('scroll');
+                                        $(window).scroll(function(){
+                                            functionScroll();
+                                        });
+                                    }
+
+                                });
+                            </script>
+                            <div class="Ozon-text">Ozon<br /><span class="ozon-pr">28.5%</span></div>
+                            <div class="diagram-item child">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    Интернет-магазин Десткий мир <br />
+                                    19.2%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+
+                            <div class="diagram-item nothing">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    Ничего из перечисленного <br />
+                                    16.9%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                            <div class="diagram-item enter">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    Enter <br />
+                                    13.3%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                            <div class="diagram-item other">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    Другое <br />
+                                    13.1%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                            <div class="diagram-item mytoys">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    MyToys.ru <br />
+                                    13.0%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                            <div class="diagram-item children">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    Дочки и сыночки <br />
+                                    10.9%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="diagram1">
+                            <div class="Ozon-text2">Ozon<br /><span class="ozon-pr">19%</span></div>
+                            <div class="diagram-item1 avito">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    Avito.ru <br />
+                                    18.0%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                            <div class="diagram-item1 ebay">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    ebay <br />
+                                    16.0%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                            <div class="diagram-item1 er5">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    E5.RU <br />
+                                    13.0%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                            <div class="diagram-item1 ali">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    AliExpress <br />
+                                    11.0%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                            <div class="diagram-item1 other2">
+                                <div class="diagram-top">
+                                </div>
+                                <div class="diagram-center">
+                                    Другие <br />
+                                    23.0%
+                                </div>
+                                <div class="diagram-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diagram-text diagram-text1">
+                        Рейтинг интеренет-магазинов по продаже дестких товаров <br /> <span class="source-diagram">Источник: РБК, ноябрь 2014</span>
+                    </div>
+                    <div class="diagram-text diagram-tex2">
+                        Top-5 интернет-магазинов по покупкам. <br /> <span class="source-diagram">Источник: Synovate Comcon, сентябрь 2014</span>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="bGreeting">
+            <div id="Hi"></div>
+			<div class="mGreeting">
+				<div class="eName">ЗДРАВСТВУЙТЕ, КОЛЛЕГИ!</div>
+				<div>Рада приветствовать Вас на сайте холдинга OZON. Сегодня OZON – крупнейшая группа электронной коммерции, состоящая из 5 компаний, охватывающих разные аспекты электронной коммерции. OZON - третья по величине IT-компания в России после Яндекс <br/> и Mail Group. </div>
+				<div>Компания была, как книжный интернет-магазин, спустя 15 лет компания специализируется на продаже широкого ассортимента товаров, туристических услуг,  услуг фулфилмента и доставки</div>
+				<div class="eSubscription">
+					<div>Генеральный директор OZON Holdings,</div>
+					<div>Маэль Гавэ</div>
+				</div>
+			</div>
+		</div>
+		<div class="bSmi">
+			<div class="eName">СМИ О КОМПАНИИ</div>
+            <div id="News"></div>
+			<div class="mSmi boxHomeSlider">
+				<ul class="ePaging"></ul>
+				<div class="eLeftArrow"></div>
+				<div class="eRightArrow"></div>
+                <ul class="bjqs">
+                    <li>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="bInfo contentItem1 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">The CEO of Ozon on Building an e-Commerce Giant...</div>
+                                            <div class="eContentInfo">Russia’s economy is cash based, and its delivery networks are shaky. To drive growth in e-commerce, Ozon had to create a proprietary distribution system, a new logistics and customer service model..</div>
+                                            <div class="bContentFooter contentItem1">
+                                                <div class="eDateInfo">июль 2014</div>
+                                                <div class="eLogo"><a href=""><img src="images-icons/icons-1_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bInfo contentItem2 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">Maelle Gavet: There’s No Such Thing as Raising... "</div>
+                                            <div class="eContentInfo">Competition between startups over who can raise the most money has grown increasingly cutthroat. The last few months in particular have seen Indian e-commerce company Flipkart raise $1 billion and ..</div>
+                                            <div class="bContentFooter contentItem2">
+                                                <div class="eDateInfo">15 сентября 2014</div>
+                                                <div class="eLogo"><a href=""><img src="images-icons/icons-2_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bInfo contentItem3 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">West Is Not Always Best</div>
+                                            <div class="eContentInfo">The past few years have been an exciting time at Ozon; we are now Russia’s biggest e-commerce company. We’ve gone from 900 staff five years ago to about 2,300, and last year our sales hit $750 million — a 50% increase on 2013.</div>
+                                            <div class="bContentFooter contentItem3">
+                                                <div class="eDateInfo">4 ноября 2014</div>
+                                                <div class="eLogo"><a href=""><img src="images-icons/icons-3_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="bInfo contentItem4 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">OZON.ru: Russia's Answer To Amazon</div>
+                                            <div class="eContentInfo">Рада приветствовать Вас на сайте холдинга OZON. Сегодня OZON – это самая большая e-commerce группа в Рунете, состоящая из 5 компаний, охватывающих разные аспекты электронной коммерции.</div>
+                                            <div class="bContentFooter contentItem4">
+                                                <div class="eDateInfo">13 февраля 2014</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-4_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bInfo contentItem5 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">The Amazon of Russia Is Building Its Own UPS—While Battling...</div>
+                                            <div class="eContentInfo">Russia doesn’t have many Starbucks–at least compared to the United States, where they’re everywhere. Instead, Russia’s street corners have OZON.</div>
+                                            <div class="bContentFooter contentItem5">
+                                                <div class="eDateInfo">5 мая 2014</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-5_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bInfo contentItem6 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">Ozon CEO Maëlle Gavet on why she just raised $150 million...</div>
+                                            <div class="eContentInfo">The French-born chief executive of Russian online retail giant Ozon, Maëlle Gavet, has in the past been compared to Jeff Bezos in a great Fast Company profile, and the massive e-commerce company she </div>
+                                            <div class="bContentFooter contentItem6">
+                                                <div class="eDateInfo">март 2014</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-6_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li>
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="bInfo contentItem7 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">Maëlle Gavet: "En Russie, le comportement vis-à-vis du genre...</div>
+                                            <div class="eContentInfo">La Française Maëlle Gavet est, à 35 ans, la directrice générale de Ozon, l'un des plus gros groupes d'e-business de Russie, estime qu'il y a en Russie un comportement assez neutre...</div>
+                                            <div class="bContentFooter contentItem1">
+                                                <div class="eDateInfo">28 октября 2013</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-7_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bInfo contentItem8 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">Things in Russia aren’t as bad as Western media makes it seem...</div>
+                                            <div class="eContentInfo">sur son parcours, le devel.</div>
+                                            <div class="bContentFooter contentItem2">
+                                                <div class="eDateInfo">17 февраля 2013</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-8_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bInfo contentItem9 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">Maëlle Gavet, la Française qui a séduit la Russie</div>
+                                            <div class="eContentInfo">CEO de la holding Ozon, l’équivalent d’Amazon en Russie, à 35 ans cette Française est une des femmes d’affaires qui comptent en Russie. Elle vient d’ailleurs d’être élue Rising Talents 2013...</div>
+                                            <div class="bContentFooter contentItem3">
+                                                <div class="eDateInfo">23 октября 2013</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-9_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="bInfo contentItem10 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">Ozon Group: The `Amazon' of Russia's Tech Scene</div>
+                                            <div class="eContentInfo">Ozon Group CEO Maelle Gavet discusses the growing ecommerce in Russia. She speaks with Nicole Lapin on Bloomberg Television's "Bloomberg West." </div>
+                                            <div class="bContentFooter contentItem4">
+                                                <div class="eDateInfo">4 октября 2014</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-10_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bInfo contentItem11 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">Is This The Jeff Bezos Of Russia?</div>
+                                            <div class="eContentInfo">Gavet, photographed on the Bolshoy Kamenny Bridge, in Moscow, is that rare outsider who has thrived in Russia's insular business community. | Photo by Yuri Kozyrev "We will have dinner," Maelle Gavet says. "And you.</div>
+                                            <div class="bContentFooter contentItem5">
+                                                <div class="eDateInfo">8 августа 2012</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-11_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="bInfo contentItem12 newsItems">
+                                        <div class="mInfo">
+                                            <div class="eNameInfo">'Amazon of Russia' Ozon.ru Boosts Sales</div>
+                                            <div class="eContentInfo">Ozon.ru, a Russian online shopping site similar to Amazon.com Inc. (AMZN), saw net sales by dollar value rise 55 percent last year. Revenue reached $250 million in 2012 and the number of registered.</div>
+                                            <div class="bContentFooter contentItem6">
+                                                <div class="eDateInfo">23 марта 2013</div>
+                                                <div class="eLogo"><a href="/"><img src="images-icons/icons-12_1.jpg" alt=""/></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </li>
+                </ul>
+			</div>
+		</div>
+		<div class="bInfoInsert">
+			<div class="mInfoInsert">
+				<div class="eText">Компания была основана, как книжный интернет-магазин, спустя 17 лет компания специализируется на продаже широкого ассортимента товаров, туристических услуг, услуг фулфилмента и доставки</div>
+                <div id="Inv"></div>
+            </div>
+		</div>
+		<div class="bInvestors">
+			<div class="eName">ИНВЕСТОРЫ</div>
+			<div class="mLogo">
+				<div class="eBaring">
+					<div class="ePopup">
+						<div class="eTriaTop"></div>
+						<div class="eTitle">BVCP</div>
+						<span>Основан в 1994 году, инвестирует в крупные проекты в России и других странах бывшего СССР. Baring Vostok Private Equity Fund – основной акционер OZON с долей 43%.</span>
+                        <div class="eTriaBottom"></div>
+					</div>
+				</div>
+                <div class="eCinema">
+                    <div class="ePopup">
+                        <div class="eTriaTop"></div>
+                        <div class="eTitle">Cinema</div>
+                        <span>Крупнейшая в России и СНГ публичная диверсифицированная холдинговая компания, обслуживающая более 100 миллионов потребителей в разных отраслях.</span>
+                        <div class="eTriaBottom"></div>
+                    </div>
+                </div>
+				<div class="eVentures">
+                    <div class="ePopup">
+                        <div class="eTriaTop"></div>
+                        <div class="eTitle">Index</div>
+                        <span>Глобальный венчурный фонд, сфокусированный на инвестициях в информационные технологии . Компания была основана в 1996 году, фирма вложила в разные бизнесы в 20 странах.</span>
+                        <div class="eTriaBottom"></div>
+                    </div>
+				</div>
+				<div class="eCisco">
+                    <div class="ePopup">
+                        <div class="eTriaTop"></div>
+                        <div class="eTitle">Cisco</div>
+                        <span>Американская транснациональная компания, разрабатывающая и продающая сетевое оборудование.</span>
+                        <div class="eTriaBottom"></div>
+                    </div>
+				</div>
+				<div class="eIntel">
+                    <div class="ePopup">
+                        <div class="eTriaTop"></div>
+                        <div class="eTitle">Intel</div>
+                        <span>Глобальный инвестиционный фонд корпорации Intel. Финансирует инновационные компании и стартапы по всему миру.</span>
+                        <div class="eTriaBottom"></div>
+                    </div>
+				</div>
+                <div class="eMts">
+                    <div class="ePopup">
+                        <div class="eTriaTop"></div>
+                        <div class="eTitle">Mts</div>
+                        <span>Является ведущим телекоммуникационным оператором в России и странах СНГ.</span>
+                        <div class="eTriaBottom"></div>
+                    </div>
+                </div>
+				<div class="eRunet">
+                    <div class="ePopup">
+                        <div class="eTriaTop"></div>
+                        <div class="eTitle">ru-Net</div>
+                        <span>Инвестиционная компания, осуществляющая прямые инвестиции и управляющая компаниями и активами. Первая инвестиция была в 1999 году.</span>
+                        <div class="eTriaBottom"></div>
+                    </div>
+				</div>
+				<div class="eHV">
+                    <div class="ePopup">
+                        <div class="eTriaTop"></div>
+                        <div class="eTitle">HV-ventures</div>
+                        <span>Венчурный фонд, основан в 2000 году. Инвестировал в более 100 компаний.</span>
+                        <div class="eTriaBottom"></div>
+                    </div>
+				</div>
+				<div class="eRakuten">
+                    <div class="ePopup">
+                        <div class="eTriaTop"></div>
+                        <div class="eTitle">eRakuten</div>
+                        <span>Крупнейшая eCommerce компания Японии. Основана в 1997 году. Инвестирует в OZON с 2011 года.</span>
+                        <div class="eTriaBottom"></div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="bInfoInsert two">
+			<div class="mInfoInsert">
+				<div class="eText">OZON обладает развитой инфраструктурой: операционно-логистическим комплексом площадью 28 000 м2, пятью региональными хабами и сетью из 1600 пунктов выдачи заказов</div>
+			</div>
+		</div>
+		<div id="Contact" class="bContact">
+			<div class="mContact">
+				<div class="eName">КОНТАКТЫ</div>
+				<div class="eAdress"><span></span>125252, Москва,Чапаевский пер., 14, БЦ Сокол Плейс</div>
+				<div class="ePhone"><span></span>+7 (495) 258-27-47</div>
+				<div class="eMail"><span></span><a href="mailto:ir@ozonholdings.ru">ir@ozonholdings.ru</a></div>
+			</div>
+		</div>
+        <div class="map-bottom-white"></div>
+	</div>
+    <div id="YMapsID">
+        <div class="map-background">
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Ozon holding</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<link rel="Stylesheet" type="text/css" href="css/oz_hol.css" />
+<link rel="stylesheet" href="css/tinyscrollbar.css" type="text/css" media="screen"/>
+<link rel="Shortcut Icon" type="image/ico" href="favicon.ico">
+    <script language="JavaScript" type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-ui.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/ozon-holding-company.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/hoverIntent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/slider.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/bjqs-1.3.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/oz_hol-company.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/scroll.js"></script>
+    <style type="text/css">
+        .boxTabs {
+            width:100%;
+            display:none;
+            position:relative;
+            margin-
+        }
+        .boxTabs:after {
+            background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACcQAAABUCAYAAACmjaatAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjAyMUZGODkwQzU1RjExRTNBOEZFODY5MzI5RDc5NjIwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAyMUZGODkxQzU1RjExRTNBOEZFODY5MzI5RDc5NjIwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDIxRkY4OEVDNTVGMTFFM0E4RkU4NjkzMjlENzk2MjAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDIxRkY4OEZDNTVGMTFFM0E4RkU4NjkzMjlENzk2MjAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6+W4DeAAAKMklEQVR42uzdj2cd2R/H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);
+            background-position: center bottom;
+            content:'';
+            width:100%;
+            height:62px;
+            display:block;
+            position:absolute;
+            bottom: 0;
+        }
+        .boxTabs .mRoll {
+            position:absolute;
+            bottom:16px;
+            left:48%;
+            cursor:pointer;
+            font-family: MuseoSansCyrl-100;
+            font-size:16px;
+            color:#fff;
+            text-align:center;
+            z-index:2;
+        }
+        .boxTabs .mRoll > div {
+            background-image:url(img/erroy.png);
+            background-position: 0 0;
+            background-repeat:no-repeat;
+            width:32px;
+            height:27px;
+            margin-left:20px;
+        }
+        .bLogos .eOzon.active, .bLogos .eTravel.active, .bLogos .eSapato.active, .bLogos .eCourier.active, .bLogos .eEs.active {
+            background-color: #e5f8fe;
+        }
+
+        .bLogos .eOzon.active:before, .bLogos .eTravel.active:before, .bLogos .eSapato.active:before, .bLogos .eCourier.active:before, .bLogos .eEs.active:before, .bLogos .eOzon.active:after, .bLogos .eTravel.active:after, .bLogos .eSapato.active:after, .bLogos .eCourier.active:after, .bLogos .eEs.active:after {
+            display: block;
+        }
+        .bLogos .eOzon.active a{
+            background-position:0 -30px;
+        }
+        .bLogos .eTravel.active a{
+            background-position:-122px -31px;
+        }
+        .bLogos .eSapato.active a{
+            background-position:-210px -36px;
+        }
+        .bLogos .eCourier.active a{
+            background-position:-300px -21px;
+        }
+        .bLogos .eEs.active a{
+            background-position:-466px -45px;
+        }
+        .boxTabs .contentItems{
+
+        }
+
+
+        .bPopup.Es .mLeft .eName {
+            font-size: 57px !important;
+        }
+
+        .bPopup.Es .mLeft .eName, .bPopup.Es .mLeft li {
+
+            display: none;
+        }
+
+        .Es .mRight { position: relative; overflow: hidden; }
+
+        .Es .mRight .eText, .Es .mRight .eVideo { position: relative; display:none; }
+        .Es .mRight .eText { right: 0; }
+        /*.Es .mRight .eText { right: -304px; }*/
+        .Es .mRight .eVideo { bottom: 0; }
+        /*.Es .mRight .eVideo { bottom: -30px; }*/
+
+        .bPopup.Es .mLeft {
+            height: 540px;
+        }
+
+        .Courier .mLeft {
+            position: relative;
+            height: 540px;
+        }
+        .Courier .mLeft .ui-effects-wrapper {
+            height: 120px !important;
+            margin: 0 0 85px 0 !important;
+        }
+        .Courier .eNumber {
+            /*position: absolute;*/
+            /*top:0;*/
+        }
+        .Courier .eNumber2 {
+
+        }
+        .Courier .eNumber {
+            margin: 0 0 85px 0 !important;
+            font-family: MuseoSansCyrl-700 !important;
+            font-size: 80px !important;
+            line-height: 90px !important;
+            height: 120px !important;
+            width: 200px !important;
+            letter-spacing: normal !important;
+        }
+        .Courier .eNumber > div {
+            font-family: MuseoSansCyrl-100 !important;
+            font-size: 20px !important;
+            line-height: 20px !important;
+            letter-spacing: normal !important;
+        }
+        .Courier .eNumber,
+        .Courier .eLeft,
+        .Courier .eRight,
+        .Sapato .eNumber,
+        .Sapato .eLeft,
+        .Sapato .eRight,
+        .Travel .eNumber,
+        .Travel .eLeft,
+        .Travel .eRight,
+        .Ozon .eNumber,
+        .Ozon .eLeft,
+        .Ozon .eRight
+        {
+            display: none;
+        }
+        .Courier .eCar1, .Courier .eCar2 {
+            opacity: 0;
+            left: -140px;
+        }
+        .Courier .eCar2 {
+            left: -80px;
+        }
+
+        .Sapato .laScarpa {
+            display: none;
+        }
+
+        .Sapato .mLeft {
+            height: 734px;
+        }
+        .Sapato .mLeft .ui-effects-wrapper {
+            height: 140px !important;
+            margin: 0 0 227px 0 !important;
+        }
+        .Sapato .eNumber, .Travel .eNumber, .Ozon .eNumber {
+            margin: 0 0 227px 0 !important;
+            font-family: MuseoSansCyrl-700 !important;
+            font-size: 80px !important;
+            height: 140px !important;
+            width: 200px !important;
+            letter-spacing: normal !important;
+        }
+        .Sapato .eNumber > div, .Travel .eNumber > div, .Ozon .eNumber > div {
+            font-family: MuseoSansCyrl-100 !important;
+            font-size: 20px !important;
+            line-height: 20px !important;
+           /* margin: 0 !important;*/
+            letter-spacing: normal !important;
+        }
+
+        .Sapato .mRight {
+            height: 675px;
+        }
+
+        .Travel .mLeft {
+            position: relative;
+            height: 615px;
+        }
+        .Travel .mLeft .ui-effects-wrapper {
+            height: 140px !important;
+            margin: 0 0 66px 0 !important;
+        }
+        .Travel .eNumber {
+            margin: 0 0 80px 0 !important;
+        }
+
+        .Travel .mLeft .ePlane1,
+        .Travel .mLeft .ePlane2,
+        .Travel .mLeft .ePlane3 {
+            opacity: 0;
+        }
+        .Travel .mLeft .ePlane1 {
+            left: -200px;
+            bottom: 460px;
+        }
+
+        .Travel .mLeft .ePlane2 {
+            left: -390px;
+            bottom: 230px;
+        }
+
+        .Travel .mLeft .ePlane3 {
+            left: -190px;
+            bottom: 75px;
+        }
+
+        .Ozon .mLeft {
+            position: relative;
+            height: 1005px;
+        }
+        .Ozon .mLeft .ui-effects-wrapper {
+            height: 140px !important;
+            margin: 0 0 51px 0 !important;
+        }
+        .Ozon .eNumber {
+            margin: 0 0 51px 0 !important;
+        }
+        .Ozon .mLeft .eVertLine1,
+        .Ozon .mLeft .eVertLine2,
+        .Ozon .mLeft .eVertLine3 {
+            position: absolute;
+        }
+        .Ozon .mLeft .eSaleBooks,
+        .Ozon .mLeft .eInfoDiagram2,
+        .Ozon .mLeft .eInfoDiagram1 {
+            position: relative;
+            margin-right: 10px;
+        }
+        .Ozon .mLeft .eSaleBooks {
+            font-size: 80px !important;
+            line-height: 80px !important;
+            font-family: MuseoSansCyrl-700 !important;
+            left: -40px;
+            top: -100px;
+        }
+        .Ozon .mLeft .eSaleBooks > div {
+            font-family: MuseoSansCyrl-100;
+            font-size: 20px;
+            margin-top: -15px;
+            line-height: 20px !important;
+        }
+
+        .eInfoDiagram2 {
+            font-size:20px;
+            line-height: 20px !important;
+            font-family: MuseoSansCyrl-700;
+            left: -20px;
+            top: -74px;
+        }
+
+        .bPopup.Ozon .eInfoDiagram2 > div {
+            font-size:20px;
+            line-height: 20px !important;
+            font-family: MuseoSansCyrl-100;
+            width:100px;
+        }
+
+        .eInfoDiagram1 {
+            font-size:20px;
+            line-height: 20px !important;
+            font-family: MuseoSansCyrl-700;
+            left: -53px !important;
+            top: -64px;
+        }
+        .bPopup.Ozon .eInfoDiagram1 > div {
+            font-size:20px;
+            line-height: 20px !important;
+            font-family: MuseoSansCyrl-100;
+            width:100px;
+        }
+
+
+
+        .Ozon .mLeft .eVertLine1,
+        .Ozon .mLeft .eVertLine2,
+        .Ozon .mLeft .eVertLine3 {
+            position: absolute;
+        }
+        #prm .anim {
+            font-size: 80px!important; line-height: normal!important; font-family: MuseoSansCyrl-700 !important;
+        }
+    </style>
+</head>
+<body style="background-image:none;">
+	<div class="bPage" id="prm">
+    <div class="eFonHeader">
+        <div class="bHeader">
+            <div class="eLanguage">
+                <a href="/">RU</a>
+                <a href="/">ENG</a>
+            </div>
+            <div class="eSmallLogo">
+                <a href="index.html"><img class="eSmallLogo_img" src="img/small_logo.png" alt="logo_top"></a>
+            </div>
+            <ul class="bTopMenu" id="bTopMenu">
+                <li><a href="./oz_contacts.html">КОНТАКТЫ</a></li>
+                <!--<li><a href="javascript:void(0);">ИНВЕСТОРАМ</a></li> -->
+                <li><a href="oz_hol_press.html">ПРЕСС-РЕЛИЗЫ</a>
+                </li>
+                <li><a href="./oz_hol_team.html">КОМАНДА</a></li>
+                <li><a href="./oz_hol_company.html">КОМПАНИЯ</a>
+                    <ul class="bSubTopMenu">
+                        <li><a href="./oz_hol_company.html?x1">OZON.ru</a></li>
+                        <li><a href="./oz_hol_company.html?x2">OZON.Travel</a></li>
+                        <li><a href="./oz_hol_company.html?x3">Sapato</a></li>
+                        <li><a href="./oz_hol_company.html?x4">О-курьер</a></li>
+                        <li><a href="./oz_hol_company.html?x5">eSolutions</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="eFonPoligonTopMenu"></div>
+    </div>
+		<div class="bCompany">
+			<div class="eName">О КОМПАНИИ</div>
+			<div class="eSubName">Холдинг Ozon - это компаний, охватывающие различные аспекты электронной коммерции: Ozon.ru, О-Курьер, Ozon.travel, Sapato.ru, Ozon Solutions.</div>
+			<div class="eText">
+				<div>Ozon.ru основан в 1998 году и является одним из первых отечественных масштабных проектов электронной коммерции в сегменте B2C. По данным фонда «Общественное мнение» – самый популярный интернет-магазин в Рунете.  Sapato.ru - интернет-магазин обуви. Sapato.ru предлагает женскую, мужскую и детскую обувь, одежду и аксессуары. Проект был запущен в июне 2010 года, приобретен холдингом в 2012. О-Курьер – курьерская</div>
+				<div>служба холдинга, доставяющая заказы Ozon.ru и Sapato.ru, а также 70 других интернет-магазинов. Ozon.travel - туристический проект холдинга, начал свою работу в апреле 2009 года, предлагает авиа и железнодорожные билеты, а также гостиницы и страховые продукты. Ozon Solutions – b2b проект, предоставляющий услуги брендам, желающим открыть свои интернет-магазины в России. Все эти <br /><span>5 компаний</span> образуют сегодня холдинг Ozon.</div>
+			</div>
+		</div>
+		<div class="bLine">
+				<div class="eCurveLeft"></div>
+				<div class="eCurveRight"></div>
+				<div class="eIndicator"></div>
+		</div>
+		<div class="bLogos allOff" id="Logos">
+			<div class="mLogos">
+				<div class="menuItems eOzon"><a href="javascript:void(0)"></a><div class="eBlueTriang"></div></div>
+				<div class="menuItems eTravel"><a href="javascript:void(0)"></a><div class="eBlueTriang"></div></div>
+				<div class="menuItems eSapato"><a href="javascript:void(0)"></a><div class="eBlueTriang"></div></div>
+				<div class="menuItems eCourier"><a href="javascript:void(0)"></a><div class="eBlueTriang"></div></div>
+				<div class="menuItems eEs"><a href="javascript:void(0)"></a><div class="eBlueTriang"></div></div>
+                <div class="eArrow"></div>
+            </div>
+		</div>
+        <div class="boxTabs">
+            <div class="mRoll"><div></div>cвернуть</div>
+            <div class="contentItems bPopup Ozon">
+                <div class="mPopup">
+                    <div class="mLeft">
+                        <div class="eNumber"><div class="anim">55<span class="eMoreBig">%</span></div><div style="margin-top: -15px;">региональные продажи</div></div>
+                        <div class="eNumber"><div class="anim">3,5<span>млн.</span></div><div style="margin-top: -15px;">наименований в ассортименте</div></div>
+                        <!--<div class="eSaleBooks">34<span class="eMoreBig">%</span><div>книги</div></div>-->
+                        <div class="eDiagram">
+                            <div class="eVertLine eVertLine1">
+                                <div class="eSaleBooks"><div class="anim">34<span class="eMoreBig">%</span></div>
+
+                                    <div style="margin-top: -15px;">книги</div>
+                                </div>
+                            </div>
+                            <div class="eVertLine eVertLine2">
+                                <div class="eInfoDiagram2">32%
+                                    <div>другие категории</div>
+                                </div>
+                            </div>
+                            <div class="eVertLine eVertLine3">
+                                <div class="eInfoDiagram1">32<span>%</span>
+
+                                    <div>электроника</div>
+                                </div>
+                            </div>
+                            Продажи Ozon.ru
+                        </div>
+                    </div>
+                    <div class="mRight">
+                        <div class="eLeft">
+                            <div><span>После переноса</span> операционной базы онлайн-мегамаркета из Санкт-Петер- бурга в Москву началось активное развитие проекта по всем направлениям. К существующим в ассортименте книгам и музыкальным дискам добавились видео-товары, компьютерные игры и программные продукты, открылся раздел букинистики и антикварных книг.</div>
+                            <div>В 2005 году посетителям сайта стали доступны электроника, компьютерная техника, фототовары и мобильные телефоны — этот сегмент вышел на второе место по объёмам продаж после книг.</div>
+                            <div>В 2007 году были добавлены товары для детей, семьи и дома. Сегодня на сайте можно купить практически всё, за эти годы Ozon.ru прошел путь от магазина культурных товаров до онлайн-мегамаркета с самым широким в Рунете ассортиментом товаров – 3 500 000 товаров в 14 категориях. </div>
+                            <div class="eLast"><span>OZON.ru эффективно</span> использует возможности интернета для наглядного и максимально информативного представления товаров, среди которых — качественные фотографии, функция «пролистать книгу», медиафрагменты, рецензии и отзывы покупателей, система персональных рекомендаций, перекрестных ссылок, внутренних баннеров и др. Специалистами компании используется система динамического ценообразования, которая позволяет оперативно реагировать на колебания спроса, эффективно управлять продажами, предлагать посетителям онлайн-мегамаркета оптимальные цены на представленные новинки и товары. </div>
+                        </div>
+                        <div class="eRight">
+                            <div><span>Ежедневно на сайт</span> Ozon.ru заходят около 700 000 посетителей. Ассортимент онлайн-мегамаркета разделен на большие разделы, товары в которых собраны в постоянно обновляемые рубрицированные каталоги. Чтобы найти необходимый товар, можно воспользоваться и системой поиска, которая позволяет осуществлять эффективный и быстрый поиск по самому широкому спектру параметров, которые в обычных магазинах недоступны. Каждый товар помещен на отдельной странице и снабжен фотоизображением, подробным описанием, указанием необходимых выходных данных. онлайн-мегамаркет Ozon.ru работает в строгом соответствии с законами о защите прав потребителей и авторских прав.</div>
+                            <div class="eVideo"></div>
+                            <div><span>Магазин поддерживает</span> 19 способов оплаты и способов доставки заказов, которые позволяют покупателям в зависимости от места проживания подобрать оптимальное сочетание. Преимуществом сайта является его справочно-информационная часть, а именно библиография, каталог фильмов и дискография, база персоналий, архив авторских рецензий и обзоров, которые объединены единой системой ссылок Ozon.ru и взаимосвязей. Часть контента сайта посетители создают самостоятельно, используя пользовательские страницы, систему отзывов и рейтингов. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentItems bPopup Travel">
+                <div class="mPopup">
+                    <div class="mLeft">
+                        <div class="eNumber" style="position: absolute; top: 20px"><div class="anim">700</div> <div style="margin-top: -15px;">авиакомпаний</div></div>
+                        <div class="eNumber" style="margin-bottom: 92px!important; position: absolute; top:230px;"><div class="anim">1,5<span>млн.</span></div><div style="margin-top: -15px;">авиа и ж/д билетов продано в 2013 году</div></div>
+                        <div class="eNumber" style="position: absolute; top:446px;"><div class="anim">287<span>тыс.</span></div><div style="margin-top: -15px;">гостиниц и отелей</div></div>
+                        <div class="ePlane ePlane1"></div>
+                        <div class="ePlane ePlane2"></div>
+                        <div class="ePlane ePlane3"></div>
+                    </div>
+                    <div class="mRight">
+                        <div class="eLeft">
+                            <div><span>Российский</span> туристический проект холдинга, который продает авиабилеты 700 авиакомпаний, железнодорожные билеты, 278 000 гостиниц, доступных для заказа и страховки для туристов. </div>
+                            <div>Идея создания Ozon.travel принадлежит Бернару Люке (в то время генеральный директор Ozon.ru, ныне - президент холдинга Ozon и директор компании Яндекс в Европе).</div>
+                            <div>Запуск проекта Ozon.travel состоялся 7 апреля 2009 года. На момент запуска на сайте работал только функционал по бронированию авиабилетов. </div>
+                            <div>Позднее на сайте появилась возможность бронировать железнодорожные билеты по России и странам СНГ, а также возможность бронировать гостиницы. В ноябре 2011 появился новый сервис – онлайн-бронирование страховых полисов для выезжающих за рубеж.</div>
+                        </div>
+                        <div class="eRight">
+                            <div>Ozon.travel имеет аккредитацию IATA (Международной ассоциации авиатранспорта) № 92-2 2675 0 и ТКП (Транспортной клиринговой палаты) № 92108376.</div>
+                            <div>9 из 10 клиентов Ozon.travel готовы рекомендовать его своим друзьям и знакомым.</div>
+                            <div class="eVideo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentItems bPopup Sapato">
+                <div class="mPopup">
+                    <div class="mLeft">
+                        <div class="eNumber"><div class="anim">200<span>тыс.</span></div><div style="margin-top: -15px;">пар обуви в ассортименте</div></div>
+                        <div class="eNumber"><div class="anim">400</div><div style="margin-top: -15px;">брендов обуви и одежды</div></div>
+                        <div class="laScarpa laScarpa1"></div>
+                        <div class="laScarpa laScarpa2"></div>
+                        <div class="laScarpa laScarpa3"></div>
+                    </div>
+                    <div class="mRight">
+                        <div class="eLeft">
+                            <div><span>«Sapato»</span> в переводе с португальского языка означает «обувь», ассортимент которой на Sapato.ru включает уже более 400 брендов со всех уголков света. Среди них как стильные и демократичные бренды из Европы, так и – модели обуви от лучших мировых дизайнеров.</div>
+                            <div>Проект Sapato.ru был запущен в июне 2010 года, став одним из самых значимых старт-апов в сегменте электронной коммерции. Основатели проекта – инвестиционный фонд Fast Lane Ventures при поддержке венчурного фонда eVenture Capital Partners, компания Direct Group и инвестиционный холдинг AB Kinnevik. Образцом для подражания послужили успешные интернет-ритейлеры <a style="color: #0b79b5;" href="www.zappos.com">www.zappos.com</a> и <a style="color: #0b79b5;" href="www.zalando.de">www.zalando.de</a>.</div>
+                            <div>В феврале 2012 г. Sapato.ru присоединился к холдингу Ozon. Это способствовало укреплению позиции компании в Рунете и сделало Sapato.ru ближе к цели </div>
+                        </div>
+                        <div class="eRight">
+                            <div>вырасти в безусловного лидера в своей категории благодаря опыту и ресурсам Ozon как первопроходца в электронной торговле.</div>
+                            <div>Sapato.ru первым ввел такие ключевые для торговли обувью через интернет услуги, как возможность бесплатно заказать несколько моделей для примерки и вернуть курьеру неподошедшие модели, возврат обуви 365 дней в году.</div>
+                            <div class="eVideo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentItems bPopup Courier">
+                <div class="mPopup">
+                    <div class="mLeft">
+                        <div class="eNumber" ><div class="anim">2100</div><div style="margin-top: -15px;">пунктов выдачи</div></div>
+                        <div class="eNumber" ><div class="anim">600</div><div style="margin-top: -15px;">курьеров в РФ и СНГ</div></div>
+                        <div class="eNumber" ><div class="anim">550</div><div style="margin-top: -15px;">городов доставки</div></div>
+                        <div class="eCar eCar1"></div>
+                        <div class="eCar eCar2"></div>
+                    </div>
+                    <div class="mRight">
+                        <div class="eLeft">
+                            <div><span>Компания</span> была организована в 2003 году для доставки заказов Ozon.ru покупателям. Сегодня заказы клиентов доставляют более 600 курьеров по всей стране, также заказы можно получить через сеть пунктов выдачи заказов, которые насчитывают более 2100 штук по всей России.</div>
+                            <div>Кроме Ozon.ru и Sapato.ru, О-Курьер доставляет заказы 70 своих клиентов. Компания, предлагет своим клиентам следующий спектр услуг: курьерскую доставку, выдачу заказов в пунктах выдачи заказов сети, прием платежа за заказ, кассовое обслуживание и возврат заказов.</div>
+                            <div>Многолетний опыт, четкое взаимодействие структурных подразделений, высокая квалификация персонала, индивидуальный подход к каждому партнеру и гибкая система тарифов позволяют</div>
+                        </div>
+                        <div class="eRight">
+                            компании «О - Курьер» максимально эффективно и экономично решать все вопросы, связанные с доставкой заказов клиентам.
+                            Компания справляемся с доставкой заказов даже в дни пиковых нагрузок - Новый год, 23 февраля, 8 марта.
+                            <div class="eVideo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentItems bPopup Es">
+                <div class="mPopup">
+                    <div class="mLeft">
+                        <div class="eName">Ozon Solutions:</div>
+                        <ul>
+                            <li>Обработка заказов</li>
+                            <li>Доставка</li>
+                            <li>Работа с клиентами</li>
+                            <li>ИТ-инфраструктура</li>
+                            <li>Маркетинг</li>
+                            <li>Приём платежей</li>
+                        </ul>
+                    </div>
+                    <div class="mRight">
+                        <div class="eText"><span>Холдинг Ozon</span> накопил колоссальную экспертизу в умении вести бизнес в электронной коммерции в России. Логичным следствием этого стало создание в 2013 году компании eSolutions. Компания предоставляет услуги брендам, желающим открыть свои интернет-магазины в России: от фулфилмента и доставки до маркетинга и консалтинга в вопросах юзабилити.</div>
+                        <div class="eVideo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="bDates">
+			<div class="mDates">
+				<div class="eName">История Ozon Holdings в датах:</div>
+                <div id="scrollbar1">
+                    <div class="viewport">
+                        <div class="overview">
+                            <table class="eDates">
+                                <tr>
+                                    <td>
+                                        <div class="eDate">1998</div>
+                                        <div class="eEvent"><div class="event1">Появление книжного интернет-магазина Ozon.ru.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2001/2002</div>
+                                        <div class="eEvent"><div class="event2">Добавление категорий  видео, музыка, софт и DVD.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2002/2003</div>
+                                        <div class="eEvent"><div class="event3">Создание курьерской службы О-Курьер.
+                                            Появление разделов бизнес-книги, книги для детей, антиквариат и букинистика.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2004/2005</div>
+                                        <div class="eEvent"><div class="event4">Открытие разделов  электро- ника, фото и видеотовары, коллекционные и иностранные CD.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2006/2007</div>
+                                        <div class="eEvent"><div class="event5">Открытие операционно-логистического комплекса Горизонт-2 в г. Твери.
+                                            Появление разделов: дом и интерьер, игрушки, подарки, спорт и отдых, красота,  уцененная электроника.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2008/2009</div>
+                                        <div class="eEvent"><div class="event6">Открытие операционно-логистического комплекса Боровлево-2 в г. Твери площадью 12 000 квадратных метров.
+                                            Запуск разделов книги на иностранных языках, цифровые книги, а также запуск площадки для сторонних интернет-магазинов - Торговая площадка.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2010</div>
+                                        <div class="eEvent"><div class="event7">Запуск собственной электронной читалки OZON.Galaxy.
+                                            Внедрение  печати книг по требованию.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2011</div>
+                                        <div class="eEvent"><div class="event8">Открытие пунктов выдачи заказов в Казахстане.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2012</div>
+                                        <div class="eEvent"><div class="event9">Открытие второй очереди комплекса в Твери площадью 16 000 квадратных метров. Запуск раздела Одежда.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2013</div>
+                                        <div class="eEvent"><div class="event10">Появление проектов за пределами России – в Казахстане и в Прибалтике. Запуск приложения для чтения книг на платформе iOS – OzonReader.
+                                            Запуск программы лояльности Ozon.Status.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                    <td>
+                                        <div class="eDate">2013</div>
+                                        <div class="eEvent"><div class="event11">Появление проектов за пределами России – в Польше и в Израиле.</div></div>
+                                        <div class="eDisk"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bChooseDate">
+                        <div class="eFirstYear">1998</div>
+                        <div class="eScrollLine">
+                            <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                        </div>
+                        <div class="eLastYear">2014</div>
+                    </div>
+                </div>
+                <!--<div class="eBoxScroll">-->
+                    <!--<div class="eScroll">-->
+
+                    <!--</div>-->
+                <!--</div>-->
+				<!--<div class="eBlueLine"></div>-->
+				<!--<div class="bChooseDate">-->
+                    <!--&lt;!&ndash;Появление книжного интернет-магазина OZON.ru&ndash;&gt;-->
+                    <!--&lt;!&ndash;2001/2002&ndash;&gt;-->
+                    <!--&lt;!&ndash;Появление&ndash;&gt;-->
+					<!--<div class="eFirstYear">1998</div>-->
+					<!--<div class="eScrollLine">-->
+						<!--&lt;!&ndash;<div class="eScroll">&ndash;&gt;-->
+							<!--&lt;!&ndash;<div class="eLeftArrow"></div>&ndash;&gt;-->
+							<!--&lt;!&ndash;<div class="eRightArrow"></div>&ndash;&gt;-->
+						<!--&lt;!&ndash;</div>&ndash;&gt;-->
+					<!--</div>-->
+					<!--<div class="eLastYear">2014</div>-->
+				<!--</div>-->
+			</div>
+		</div>
+		<div class="bFooter">
+			<div class="mFooter">
+				<div class="eCopy">OZON Holdings 2015. </div>
+				<div class="eAdress">125252, Москва, Чапаевский пер., 14, <div>БЦ Сокол Плейс, 4 этаж</div></div>
+				<div class="ePhone_Mail">+7 (495) 258-27-47 <div>ir@ozonholdings.ru</div></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

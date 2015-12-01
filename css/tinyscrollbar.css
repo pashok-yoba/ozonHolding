@@ -1,0 +1,28 @@
+/* Tiny Scrollbar */
+#scrollbar1 { width: 100%; margin: 20px 0 10px; height: 270px; }
+#scrollbar1 .viewport { overflow: hidden; position: relative; height: 270px; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+/*#scrollbar1 .scrollbar{ background: transparent url(images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }*/
+#scrollbar1 .scrollbar {
+    background-image: url(../img/fon_scroll.png);
+    background-repeat: repeat-x;
+    background-position: 0px 2px;
+    height: 20px;
+    position: relative;
+}
+#scrollbar1 .track { background: transparent url(images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+/*#scrollbar1 .thumb { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }*/
+#scrollbar1 .thumb {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    top: 1px;
+    left: -5px;
+    background-color: #00b6f1;
+}
+.bDates .bChooseDate { overflow: visible; }
+#scrollbar1 .thumb .end { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollbar1 .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
